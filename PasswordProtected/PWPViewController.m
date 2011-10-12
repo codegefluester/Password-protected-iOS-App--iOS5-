@@ -10,6 +10,8 @@
 
 @implementation PWPViewController
 
+@synthesize keychain, passwordIsSet;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -22,6 +24,48 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    keychain = [[KeychainItemWrapper alloc] initWithIdentifier:@"MyPasswordStorage" accessGroup:nil];
+    [self askForPassword];
+}
+
+- (void) askForPassword {
+    
+    NSLog(@"Class: %@", [keychain objectForKey:(id)kSecValueData]);
+    
+    if ([[keychain objectForKey:(id)kSecValueData] length] > 0) {
+        // Ask for password
+        passwordIsSet = YES;
+        // Let the user set a new password
+        NSLog(@"Protected");
+        UIAlertView *password = [[UIAlertView alloc] initWithTitle:@"Enter password" message:@"Please enter your password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+        password.alertViewStyle = UIAlertViewStyleSecureTextInput;
+        [password show];
+        [password release];
+    } else if([[keychain objectForKey:(id)kSecValueData] length] == 0) {
+        passwordIsSet = NO;
+        // Let the user set a new password
+        NSLog(@"No password set");
+        UIAlertView *password = [[UIAlertView alloc] initWithTitle:@"Set password" message:@"Please enter your desired password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
+        password.alertViewStyle = UIAlertViewStyleSecureTextInput;
+        [password show];
+        [password release];
+    }
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    NSString *passwd = [[alertView textFieldAtIndex:0] text];
+    if (![passwd isEqualToString:@""]) {
+        if (passwordIsSet) {
+            if (![passwd isEqualToString:[keychain objectForKey:(id)kSecValueData]]) {
+                [self askForPassword];
+            }
+        } else {
+            // Save new password
+            [keychain setObject:passwd forKey:(id)kSecValueData];
+        }
+    } else {
+        [self askForPassword];
+    }
 }
 
 - (void)viewDidUnload

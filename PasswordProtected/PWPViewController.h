@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Security/Security.h>
+#import "KeychainItemWrapper.h"
 
-@interface PWPViewController : UIViewController
+@interface PWPViewController : UIViewController {
+    KeychainItemWrapper *keychain;
+    BOOL passwordIsSet;
+}
+
+@property (nonatomic, retain) KeychainItemWrapper *keychain;
+@property (nonatomic) BOOL passwordIsSet;
+
+- (void) askForPassword;
 
 @end

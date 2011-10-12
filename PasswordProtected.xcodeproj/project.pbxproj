@@ -15,6 +15,8 @@
 		111949EB1446309C00543B0A /* PWPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 111949EA1446309C00543B0A /* PWPAppDelegate.m */; };
 		111949EE1446309C00543B0A /* PWPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111949ED1446309C00543B0A /* PWPViewController.m */; };
 		111949F11446309C00543B0A /* PWPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111949EF1446309C00543B0A /* PWPViewController.xib */; };
+		111949F81446311300543B0A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111949F71446311300543B0A /* Security.framework */; };
+		111949FB144631AA00543B0A /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 111949FA144631AA00543B0A /* KeychainItemWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +24,18 @@
 		111949DA1446309C00543B0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		111949DC1446309C00543B0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		111949DE1446309C00543B0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		111949E21446309C00543B0A /* PasswordProtected-Info.plist */ = {isa = PBXFileReference; path = "PasswordProtected-Info.plist"; sourceTree = "<group>"; };
+		111949E21446309C00543B0A /* PasswordProtected-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PasswordProtected-Info.plist"; sourceTree = "<group>"; };
 		111949E41446309C00543B0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		111949E61446309C00543B0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		111949E81446309C00543B0A /* PasswordProtected-Prefix.pch */ = {isa = PBXFileReference; path = "PasswordProtected-Prefix.pch"; sourceTree = "<group>"; };
-		111949E91446309C00543B0A /* PWPAppDelegate.h */ = {isa = PBXFileReference; path = PWPAppDelegate.h; sourceTree = "<group>"; };
+		111949E81446309C00543B0A /* PasswordProtected-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PasswordProtected-Prefix.pch"; sourceTree = "<group>"; };
+		111949E91446309C00543B0A /* PWPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWPAppDelegate.h; sourceTree = "<group>"; };
 		111949EA1446309C00543B0A /* PWPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPAppDelegate.m; sourceTree = "<group>"; };
-		111949EC1446309C00543B0A /* PWPViewController.h */ = {isa = PBXFileReference; path = PWPViewController.h; sourceTree = "<group>"; };
+		111949EC1446309C00543B0A /* PWPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PWPViewController.h; sourceTree = "<group>"; };
 		111949ED1446309C00543B0A /* PWPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPViewController.m; sourceTree = "<group>"; };
 		111949F01446309C00543B0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PWPViewController.xib; sourceTree = "<group>"; };
+		111949F71446311300543B0A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		111949F9144631AA00543B0A /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		111949FA144631AA00543B0A /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111949F81446311300543B0A /* Security.framework in Frameworks */,
 				111949DB1446309C00543B0A /* UIKit.framework in Frameworks */,
 				111949DD1446309C00543B0A /* Foundation.framework in Frameworks */,
 				111949DF1446309C00543B0A /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +56,7 @@
 		111949CB1446309C00543B0A = {
 			isa = PBXGroup;
 			children = (
+				111949F71446311300543B0A /* Security.framework */,
 				111949E01446309C00543B0A /* PasswordProtected */,
 				111949D91446309C00543B0A /* Frameworks */,
 				111949D71446309C00543B0A /* Products */,
@@ -77,6 +84,8 @@
 		111949E01446309C00543B0A /* PasswordProtected */ = {
 			isa = PBXGroup;
 			children = (
+				111949F9144631AA00543B0A /* KeychainItemWrapper.h */,
+				111949FA144631AA00543B0A /* KeychainItemWrapper.m */,
 				111949E91446309C00543B0A /* PWPAppDelegate.h */,
 				111949EA1446309C00543B0A /* PWPAppDelegate.m */,
 				111949EC1446309C00543B0A /* PWPViewController.h */,
@@ -163,6 +172,7 @@
 				111949E71446309C00543B0A /* main.m in Sources */,
 				111949EB1446309C00543B0A /* PWPAppDelegate.m in Sources */,
 				111949EE1446309C00543B0A /* PWPViewController.m in Sources */,
+				111949FB144631AA00543B0A /* KeychainItemWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +246,7 @@
 		111949F51446309C00543B0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PasswordProtected/PasswordProtected-Prefix.pch";
 				INFOPLIST_FILE = "PasswordProtected/PasswordProtected-Info.plist";
@@ -247,6 +258,7 @@
 		111949F61446309C00543B0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PasswordProtected/PasswordProtected-Prefix.pch";
 				INFOPLIST_FILE = "PasswordProtected/PasswordProtected-Info.plist";
