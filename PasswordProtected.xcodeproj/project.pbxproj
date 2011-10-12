@@ -1,0 +1,281 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111949DB1446309C00543B0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111949DA1446309C00543B0A /* UIKit.framework */; };
+		111949DD1446309C00543B0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111949DC1446309C00543B0A /* Foundation.framework */; };
+		111949DF1446309C00543B0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 111949DE1446309C00543B0A /* CoreGraphics.framework */; };
+		111949E51446309C00543B0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 111949E31446309C00543B0A /* InfoPlist.strings */; };
+		111949E71446309C00543B0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 111949E61446309C00543B0A /* main.m */; };
+		111949EB1446309C00543B0A /* PWPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 111949EA1446309C00543B0A /* PWPAppDelegate.m */; };
+		111949EE1446309C00543B0A /* PWPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111949ED1446309C00543B0A /* PWPViewController.m */; };
+		111949F11446309C00543B0A /* PWPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111949EF1446309C00543B0A /* PWPViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111949D61446309C00543B0A /* PasswordProtected.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordProtected.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		111949DA1446309C00543B0A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		111949DC1446309C00543B0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		111949DE1446309C00543B0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		111949E21446309C00543B0A /* PasswordProtected-Info.plist */ = {isa = PBXFileReference; path = "PasswordProtected-Info.plist"; sourceTree = "<group>"; };
+		111949E41446309C00543B0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		111949E61446309C00543B0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		111949E81446309C00543B0A /* PasswordProtected-Prefix.pch */ = {isa = PBXFileReference; path = "PasswordProtected-Prefix.pch"; sourceTree = "<group>"; };
+		111949E91446309C00543B0A /* PWPAppDelegate.h */ = {isa = PBXFileReference; path = PWPAppDelegate.h; sourceTree = "<group>"; };
+		111949EA1446309C00543B0A /* PWPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPAppDelegate.m; sourceTree = "<group>"; };
+		111949EC1446309C00543B0A /* PWPViewController.h */ = {isa = PBXFileReference; path = PWPViewController.h; sourceTree = "<group>"; };
+		111949ED1446309C00543B0A /* PWPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PWPViewController.m; sourceTree = "<group>"; };
+		111949F01446309C00543B0A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PWPViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		111949D31446309C00543B0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111949DB1446309C00543B0A /* UIKit.framework in Frameworks */,
+				111949DD1446309C00543B0A /* Foundation.framework in Frameworks */,
+				111949DF1446309C00543B0A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		111949CB1446309C00543B0A = {
+			isa = PBXGroup;
+			children = (
+				111949E01446309C00543B0A /* PasswordProtected */,
+				111949D91446309C00543B0A /* Frameworks */,
+				111949D71446309C00543B0A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		111949D71446309C00543B0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				111949D61446309C00543B0A /* PasswordProtected.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		111949D91446309C00543B0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				111949DA1446309C00543B0A /* UIKit.framework */,
+				111949DC1446309C00543B0A /* Foundation.framework */,
+				111949DE1446309C00543B0A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		111949E01446309C00543B0A /* PasswordProtected */ = {
+			isa = PBXGroup;
+			children = (
+				111949E91446309C00543B0A /* PWPAppDelegate.h */,
+				111949EA1446309C00543B0A /* PWPAppDelegate.m */,
+				111949EC1446309C00543B0A /* PWPViewController.h */,
+				111949ED1446309C00543B0A /* PWPViewController.m */,
+				111949EF1446309C00543B0A /* PWPViewController.xib */,
+				111949E11446309C00543B0A /* Supporting Files */,
+			);
+			path = PasswordProtected;
+			sourceTree = "<group>";
+		};
+		111949E11446309C00543B0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				111949E21446309C00543B0A /* PasswordProtected-Info.plist */,
+				111949E31446309C00543B0A /* InfoPlist.strings */,
+				111949E61446309C00543B0A /* main.m */,
+				111949E81446309C00543B0A /* PasswordProtected-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		111949D51446309C00543B0A /* PasswordProtected */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 111949F41446309C00543B0A /* Build configuration list for PBXNativeTarget "PasswordProtected" */;
+			buildPhases = (
+				111949D21446309C00543B0A /* Sources */,
+				111949D31446309C00543B0A /* Frameworks */,
+				111949D41446309C00543B0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordProtected;
+			productName = PasswordProtected;
+			productReference = 111949D61446309C00543B0A /* PasswordProtected.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		111949CD1446309C00543B0A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 111949D01446309C00543B0A /* Build configuration list for PBXProject "PasswordProtected" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 111949CB1446309C00543B0A;
+			productRefGroup = 111949D71446309C00543B0A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				111949D51446309C00543B0A /* PasswordProtected */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		111949D41446309C00543B0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111949E51446309C00543B0A /* InfoPlist.strings in Resources */,
+				111949F11446309C00543B0A /* PWPViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		111949D21446309C00543B0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				111949E71446309C00543B0A /* main.m in Sources */,
+				111949EB1446309C00543B0A /* PWPAppDelegate.m in Sources */,
+				111949EE1446309C00543B0A /* PWPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		111949E31446309C00543B0A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				111949E41446309C00543B0A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		111949EF1446309C00543B0A /* PWPViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				111949F01446309C00543B0A /* en */,
+			);
+			name = PWPViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		111949F21446309C00543B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		111949F31446309C00543B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		111949F51446309C00543B0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasswordProtected/PasswordProtected-Prefix.pch";
+				INFOPLIST_FILE = "PasswordProtected/PasswordProtected-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		111949F61446309C00543B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PasswordProtected/PasswordProtected-Prefix.pch";
+				INFOPLIST_FILE = "PasswordProtected/PasswordProtected-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		111949D01446309C00543B0A /* Build configuration list for PBXProject "PasswordProtected" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111949F21446309C00543B0A /* Debug */,
+				111949F31446309C00543B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		111949F41446309C00543B0A /* Build configuration list for PBXNativeTarget "PasswordProtected" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				111949F51446309C00543B0A /* Debug */,
+				111949F61446309C00543B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 111949CD1446309C00543B0A /* Project object */;
+}
