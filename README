@@ -1,3 +1,5 @@
-This sample project how to let the user set a password for the App, stores it in the keychain and
-the asks the user for the specified password each time he opens the App using the new UIAlertViewStyle 
-"UIAlertViewStyleSecureInput" introduced by Apple in iOS5.
+This sample project shows you how to let the user set a password for the App. 
+
+It stores it in the keychain and then asks the user for the specified password 
+each time he opens the App using the new UIAlertViewStyle "UIAlertViewStyleSecureInput" 
+introduced by Apple in iOS5.
