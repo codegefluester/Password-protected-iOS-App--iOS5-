@@ -30,12 +30,9 @@
 
 - (void) askForPassword {
     
-    NSLog(@"Class: %@", [keychain objectForKey:(id)kSecValueData]);
-    
     if ([[keychain objectForKey:(id)kSecValueData] length] > 0) {
         // Ask for password
         passwordIsSet = YES;
-        // Let the user set a new password
         NSLog(@"Protected");
         UIAlertView *password = [[UIAlertView alloc] initWithTitle:@"Enter password" message:@"Please enter your password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
         password.alertViewStyle = UIAlertViewStyleSecureTextInput;
@@ -56,8 +53,11 @@
     NSString *passwd = [[alertView textFieldAtIndex:0] text];
     if (![passwd isEqualToString:@""]) {
         if (passwordIsSet) {
+            // Passwords do not match :(
             if (![passwd isEqualToString:[keychain objectForKey:(id)kSecValueData]]) {
                 [self askForPassword];
+            } else {
+                NSLog(@"Login successfull :)");
             }
         } else {
             // Save new password
